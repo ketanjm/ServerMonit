@@ -1,0 +1,27 @@
+<h1>Server</h1>
+
+<p>
+  <b>Server name</b><br>
+  <%= @server.server_name %>
+</p>
+
+<p>
+  <b>Server ip</b><br>
+  <%= @server.server_ip %>
+</p>
+
+<p>
+  <b>Server key</b><br>
+  <%= @server.server_key %>
+</p>
+
+<p>
+  <b>Status</b><br>
+  <%= @server.status %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', servers_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_server_path(@server), :class => 'btn' %>
+  <%= link_to 'Delete', server_path(@server), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>
